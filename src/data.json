@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "header": "Заголовок 1",
+        "more": "See More",
+        "month": "June",
+        "date": 19,
+        "content": [
+            {
+                "one": "one text"
+            },
+            {
+                "two": "two text"
+        }]
+        
+    },
+    {
+        "id": 2,
+        "header": "Заголовок 2",
+        "more": "See More",
+        "month": "May",
+        "date": 1,
+        "content": [
+            {
+                "one": "one "
+            },
+            {
+                "two": "two "
+        }]
+        
+    }
+
+]

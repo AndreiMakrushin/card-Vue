@@ -12,21 +12,22 @@ const replace = () => {
 </script>
 <template>
     <div>
-            <div class="card" @click="replace">
-                  <div class="content-box">
-                      <h1 class="card-title">{{date.header}}</h1>
-                      <div v-for="cont in date.content[indexContent]" :key="cont.id">
-                        <p class="card-contdateent">
-                        {{ cont }} 
-                      </p>
-                      </div>
-                      <span class="see-more">{{ date.more }}</span>
-                  </div>
-                  <div class="date-box">
-                      <span class="month">{{ date.month }}</span>
-                      <span class="date">{{ date.date }}</span>
-                  </div>
-              </div>
+           
+
+              <div class="card" @click="replace"> 
+                <div class="content-box">
+                    <h1 class="card-title">{{date.header}}</h1>
+                    <p class="card-content" v-for="cont in date.content[indexContent]" :key="cont.id">
+                       {{ cont }}
+                    </p>
+                    <span class="see-more">{{ date.more }}</span>
+                </div>
+                <div class="date-box">
+                    <span class="month">{{ date.month }}</span>
+                    <span class="date">{{ date.date }}</span>
+                </div>
+            </div>
+              
     </div>
 </template>
 <style lang="scss" scoped>
